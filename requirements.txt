@@ -1,0 +1,5 @@
+yt-dlp
+imageio-ffmpeg
+pystray
+pillow
+curl_cffi>=0.16,<0.17

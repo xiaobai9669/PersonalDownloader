@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "个人下载器 · 媒体探测",
+  "version": "0.4.8",
+  "description": "发现当前网页请求的媒体文件并复制地址到个人下载器。",
+  "permissions": ["webRequest", "tabs", "storage", "clipboardWrite", "downloads"],
+  "host_permissions": ["http://*/*", "https://*/*", "http://127.0.0.1:18765/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{"matches": ["http://*/*", "https://*/*"], "js": ["sniff.js"], "run_at": "document_start"}],
+  "action": {"default_popup": "popup.html", "default_title": "探测媒体"}
+}
