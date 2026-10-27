@@ -1,0 +1,27 @@
+# Python virtual environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# PyInstaller and packaged distributions
+build/
+dist/
+*.exe
+*.msi
+*.zip
+
+# Local notes, state, and browser credentials
+.workbuddy/
+.personal-downloader/
+tasks.json
+cookies*.txt
+*.cookies.txt
+.env
+.env.*
+
+# Editor and OS metadata
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
